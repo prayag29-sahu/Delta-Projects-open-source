@@ -110,7 +110,7 @@ UPI Test: `success@razorpay`
 | # | Issue | Fix |
 |---|-------|-----|
 | 1 | `server/index.js` was 100% commented out | Cleaned up and kept only the working code |
-| 2 | `RAZORPAY_KEY_ID` hardcoded as `rzp_test_Rfxg9MuVniD43P` in `Product.js` | Moved to `REACT_APP_RAZORPAY_KEY_ID` env var |
+| 2 | `RAZORPAY_KEY_ID` hardcoded as `rzp_test_xxxxxxxxxxxx` in `Product.js` | Moved to `REACT_APP_RAZORPAY_KEY_ID` env var |
 | 3 | No env check — server started silently without valid keys | Added startup validation log |
 | 4 | `Popup.js` was broken (raw JSX outside a component, no export) | Removed and replaced with inline status UI in `Product.js` |
 | 5 | No error handling on `fetch()` calls (would crash on non-2xx) | Added `response.ok` checks with proper error bubbling |
