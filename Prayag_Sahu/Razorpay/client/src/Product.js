@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
-const RAZORPAY_KEY_ID = "rzp_test_S2EJCNjJGivfLw";
+const RAZORPAY_KEY_ID = process.env.REACT_APP_RAZORPAY_KEY_ID || "rzp_test_XXXXXXXXXXXXXXXXXX";
 
 function Product() {
   const [loading, setLoading] = useState(false);
